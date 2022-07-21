@@ -10,10 +10,7 @@ export default function Index() {
     const aboutSection = document.getElementById('myCv')
     aboutSection.scrollIntoView({ inline: 'center', behavior: 'smooth' })
   }
-  const goToGift = () => {
-    const aboutSection = document.getElementById('gift')
-    aboutSection.scrollIntoView({ inline: 'center', behavior: 'smooth' })
-  }
+
   return (
     <>
       <IndexNavbar fixed />
@@ -41,12 +38,6 @@ export default function Index() {
                   className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-700 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank">
                   About me
-                </a>
-                <a
-                  onClick={() => goToGift()}
-                  className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg"
-                  target="_blank">
-                  Get Your Gift
                 </a>
               </div>
             </div>
